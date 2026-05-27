@@ -50,7 +50,21 @@
             "./image4.webp",
             "./image5.webp"
         ];
-        
+        let imgIndex = 0;
+
+        const imgElement = document.getElementById("img");
+
+        function prev(){
+            if(imgIndex == 0){
+                imgIndex = imageArr.length -1;
+            }
+            else{
+                imgIndex--;
+            }
+            imgElement.src = imageArr[imgIndex];
+        }
+
+       
     </script>
        
 </body>
