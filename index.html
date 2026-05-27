@@ -63,9 +63,16 @@
             }
             imgElement.src = imageArr[imgIndex];
         }
-
-       
-    </script>
-       
+        function next(){
+            if(imgIndex == imageArr.length - 1){
+                imgIndex = 0;
+            }
+            else{
+                imgIndex++;
+            }
+            imgElement.src = imageArr[imgIndex];   
+        }
+    
+    </script>     
 </body>
 </html>
